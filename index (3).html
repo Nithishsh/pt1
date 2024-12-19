@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Portfolio Tracker</h1>
+
+    <!-- Add Stock Form -->
+    <div class="form-container">
+        <h3>Add a Stock</h3>
+        <form id="add-stock-form">
+            <input type="text" id="symbol" class="form-input" placeholder="Stock Symbol (e.g., AAPL)" required>
+            <input type="number" id="quantity" class="form-input" placeholder="Quantity" required min="1">
+            <button type="submit" class="btn">Add Stock</button>
+        </form>
+    </div>
+
+    <!-- Portfolio Table -->
+    <div class="portfolio-container">
+        <h3>Your Portfolio</h3>
+        <table id="portfolio-table" class="stock-table">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Value</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Stock entries will be injected here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Total Portfolio Value -->
+    <div class="total-value-container">
+        <h3>Total Portfolio Value: <span id="total-value">$0.00</span></h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
